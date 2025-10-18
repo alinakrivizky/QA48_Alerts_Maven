@@ -1,5 +1,6 @@
 package com.alertsqa.tests;
 
+import com.alertsqa.pages.HomePage;
 import com.alertsqa.pages.alertsFrameWindows.AlertsPage;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -8,11 +9,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
 public class AlertsTests extends TestBase {
+     @BeforeMethod
+    public void precondition(){
+         new HomePage(driver).getAlertsFrameWindows();
+     }
     @Test
     public void clickOnJSAlertButtonTest() {
         new AlertsPage(driver).clickOnJSAlert();
