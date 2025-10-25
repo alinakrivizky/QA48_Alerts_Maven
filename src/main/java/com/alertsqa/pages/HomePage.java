@@ -34,4 +34,16 @@ WebElement alert;
         click(dropdown);
         return new HomePage(driver);
     }
+@FindBy(css="a[href='/horizontal_slider']")
+WebElement slider;
+    public HomePage getHorizontalSlider() {
+        click(slider);
+        return new HomePage(driver);
+    }
+    @FindBy(css="a[href='/hovers']")
+    WebElement hovers;
+    public HomePage getHovers() {
+        click(hovers);
+        return this;
+    }
 }
