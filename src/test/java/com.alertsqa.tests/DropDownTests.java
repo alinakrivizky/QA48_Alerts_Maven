@@ -1,10 +1,7 @@
 package com.alertsqa.tests;
 
 import com.alertsqa.pages.HomePage;
-import com.alertsqa.pages.alertsFrameWindows.DropDownPage;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.alertsqa.pages.interactions.DropDownPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

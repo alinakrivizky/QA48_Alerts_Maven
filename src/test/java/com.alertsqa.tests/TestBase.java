@@ -1,6 +1,5 @@
 package com.alertsqa.tests;
 
-import com.alertsqa.pages.Base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;

@@ -1,10 +1,8 @@
 package com.alertsqa.pages;
 
-import com.alertsqa.pages.Base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
@@ -45,5 +43,11 @@ WebElement slider;
     public HomePage getHovers() {
         click(hovers);
         return this;
+    }
+@FindBy(css="a[href='/drag_and_drop']")
+WebElement drag_and_drop;
+    public HomePage getDragAndDrop() {
+        click(drag_and_drop);
+        return new HomePage(driver);
     }
 }

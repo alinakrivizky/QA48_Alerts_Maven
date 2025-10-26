@@ -1,6 +1,6 @@
-package com.alertsqa.pages.alertsFrameWindows;
+package com.alertsqa.pages.interactions;
 
-import com.alertsqa.pages.Base.BasePage;
+import com.alertsqa.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

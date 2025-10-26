@@ -1,11 +1,10 @@
 package com.alertsqa.pages.widgets;
 
-import com.alertsqa.pages.Base.BasePage;
+import com.alertsqa.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class HoversPage extends BasePage {
