@@ -12,6 +12,6 @@ public class DragAndDropTest extends TestBase{
     }
     @Test
     public void DragAndDropTest(){
-        new DragAndDropPage(driver).changeThePlace();//verifyResult();
+        new DragAndDropPage(driver).changeThePlace().verifyResult("B");
     }
 }
